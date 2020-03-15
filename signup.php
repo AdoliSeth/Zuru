@@ -68,85 +68,97 @@ if (isset($_POST ['btn-signup'])){
 ?>
 
 
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-lg-3 col-xl-3"></div>
-        <div class="col-md-6 col-lg-6 col-xl-6">
-            <div id="form-section">
-                <form action="" method="post">
-                    <fieldset>
-                        <div class="form-group">
-                            <label for="">Firstname</label>
-                            <input type="text" name="firstname" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Lastname</label>
-                            <input type="text" name="lastname" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Username</label>
-                            <input type="text" name="username" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Phone</label>
-                            <input type="number" name="phone" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Password</label>
-                            <input type="password" name="password1" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Confirm Password</label>
-                            <input type="password" name="password2" class="form-control" required>
-                        </div>
-                        <div class="input-group">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/customerimage.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/vendorimage.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/deliveryimage.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-lg-3 col-xl-3"></div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div id="form-section">
+                        <form action="" method="post" style="font-weight: bold;color: orange">
+                            <fieldset>
+
+                                <div class="form-group">
+                                    <label for="">Firstname</label>
+                                    <input type="text" name="firstname" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Lastname</label>
+                                    <input type="text" name="lastname" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Username</label>
+                                    <input type="text" name="username" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Phone</label>
+                                    <input type="number" name="phone" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Password</label>
+                                    <input type="password" name="password1" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Confirm Password</label>
+                                    <input type="password" name="password2" class="form-control" required>
+                                </div>
+                                <div class="input-group">
                             <span>
                                 Supplier <input type="radio" name="user-type" value="supplier">
                             </span>
-                            <span>
+                                    <span>
                                 Customer <input type="radio" checked name="user-type" value="customer">
                             </span>
-                        </div>
-                        <br>
-
-                            <div class="form-row align-items-center">
-                                <div class="col-auto my-1">
-                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Location</label>
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                        <option selected>Choose location</option>
-                                        <option value="1">Kahawa Wendani</option>
-                                        <option value="2">Roysambu</option>
-                                        <option value="3">Muthaiga</option>
-                                    </select>
                                 </div>
-                                <div class="col-auto my-1">
-                                    <div class="custom-control custom-checkbox mr-sm-2">
-                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                <br>
+
+                                <div class="form-row align-items-center">
+                                    <div class="col-auto my-1">
+                                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Location</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Choose location</option>
+                                            <option value="1">Kahawa Wendani</option>
+                                            <option value="2">Roysambu</option>
+                                            <option value="3">Muthaiga</option>
+                                        </select>
                                     </div>
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                            <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                        </div>
+                                    </div>
+                                    <!--                                <div class="col-auto my-1">-->
+                                    <!--                                    <button type="submit" class="btn btn-primary">Submit</button>-->
+                                    <!--                                </div>-->
                                 </div>
-<!--                                <div class="col-auto my-1">-->
-<!--                                    <button type="submit" class="btn btn-primary">Submit</button>-->
-<!--                                </div>-->
-                            </div>
 
-                        <br>
-                        <button class="btn btn-warning btn-block" name="btn_signup">Create account</button>
-                    </fieldset>
-                </form>
+                                <br>
+                                <button class="btn btn-warning btn-block" name="btn_signup">Create account</button>
+                            </fieldset>
+                        </form>
 
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3"></div>
             </div>
         </div>
-        <div class="col-md-3 col-lg-3 col-xl-3"></div>
     </div>
 </div>
-
-
 
 
 
