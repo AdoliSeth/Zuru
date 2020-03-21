@@ -53,6 +53,20 @@ if (isset($_POST ['btn-signup'])){
         $location_error = "Select your location";
     }
 
+//    //3.check password matched
+//    if($password1 != $password2){
+//        $password1_err = "password did not match";
+//    }else{
+//        //4.check if user exists
+//        $sql="SELECT * FROM `users` WHERE email = '$email'";
+//    //        result from db
+//        $results = mysqli_query($conn, $sql);
+//        if(mysqli_num_rows($results) > 0){
+//    //            user exists, got to login
+//            header("location:login.php");
+//            exit();
+//        }
+
 // add user to db
     $password1 = md5($password1);
     $sql = "INSERT INTO `users`(`id`, `firstname`, `lastname`, `username`, `email`, `phone`, `password`, `user_type`, `location`) VALUES (NULL,'$firstname','$lastname','$username','$email','$phone','$password1','$user_type','$location')";
@@ -79,6 +93,7 @@ if (isset($_POST ['btn-signup'])){
         <div class="carousel-item">
             <img src="images/deliveryimage.jpeg" class="d-block w-100" alt="...">
         </div>
+        <br>
         <div class="container">
             <div class="row">
 
@@ -163,7 +178,10 @@ if (isset($_POST ['btn-signup'])){
 
 
 
+
+
 <?php
 require 'footer.php';
+
 ?>
 

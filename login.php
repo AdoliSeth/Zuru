@@ -1,5 +1,31 @@
 <?php
 require 'header.php';
+require 'config.php';
+//$email = $password = '';
+//$email_err = $password_err = '';
+// if (isset($_POST['btn_signup'])){
+//    if (isset($_POST['email'])){
+//        $email = $_POST['email'];
+//    }else{
+//        $email_err = "Please fill in the right email";
+//    }
+//    if (isset($_POST['password'])){
+//        $password = $_POST['password'];
+//    }else{
+//        $password_err = "Please fill in the correct password";
+//    }
+//
+//    $password = md5($password);
+//     $sql = "SELECT `id`, `firstname`, `lastname`, `username`, `email`, `phone`, `password`, `user_type`, `location` FROM `users` WHERE email = '$email' AND password = '$password'";
+//    $results = mysqli_query($conn,$sql);
+
+// }
+
+
+
+
+
+
 ?>
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -13,6 +39,8 @@ require 'header.php';
         <div class="carousel-item">
             <img src="images/deliveryimage.jpeg" class="d-block w-100" alt="...">
         </div>
+        <br>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-lg-3 col-xl-3"></div>
