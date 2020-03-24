@@ -41,7 +41,7 @@ require 'config.php';
         </div>
         <br>
 
-        <div class="container">
+        <div class="container" style="color: orangered">
             <div class="row">
                 <div class="col-md-3 col-lg-3 col-xl-3"></div>
                 <div class="col-md-6 col-lg-6 col-xl-6">
@@ -49,7 +49,7 @@ require 'config.php';
                         <form action="" method="post" style="font-weight: bold; color: orange">
                             <fieldset>
                                 <div class="form-group">
-                                    <label for="">Username</label>
+                                    <label style="color: darkorange" for="">Username</label>
                                     <input type="text" name="username" class="form-control" required>
                                 </div>
                                 <div class="form-group">
